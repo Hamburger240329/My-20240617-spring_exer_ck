@@ -7,11 +7,11 @@
 <title>회원정보출력</title>
 </head>
 <body>
-	<h2>회원정보출력</h2>
+	<h2>게시판 내용 출력</h2>
 	<hr>
-	이름 : ${wrname }<br><br>
-	제목 : ${wrtitle }<br><br>
-	내용 : ${deteail }<br><br>
+	이름 : ${Wdto.wrName }<br><br>
+	제목 : ${Wdto.wrTitle }<br><br>
+	내용 : ${Wdto.wrDetail }<br><br>
 	
 </body>
 </html>

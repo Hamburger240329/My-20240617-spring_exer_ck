@@ -9,23 +9,24 @@
 <body>
 	<h2>게시판 글쓰기</h2>
 	<hr>
-	<form action="writeOk.jsp">
+	<form action="writeOkk">
 	<table border="1" cellspacing="0" cellpadding="0" width="600">
 		<tr>
 			<td>이름</td>
-			<td><input type="text" size="60"></td>
+			<td><input type="text" name="wrname" size="60"></td>
 		</tr>
 		<tr>
 			<td>제목</td>
-			<td><input type="text" size="60"></td>
+			<td><input type="text" name="wrtitle" size="60"></td>
 		</tr>
 		<tr>
 			<td>내용</td>
-			<td><textarea rows="10" cols="45"></td>
+			<td><textarea rows="10" name="wrdetail" cols="45"></textarea></td>
 		</tr>
 		<tr>
 			<td colspan="2">
-			<input type="submit" value="글작성"></td>		
+			<input type="submit" value="글작성">
+			</td>		
 		</tr>
 	</table>
 	</form>

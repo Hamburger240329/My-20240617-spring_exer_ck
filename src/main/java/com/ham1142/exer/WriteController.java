@@ -11,24 +11,43 @@ import com.ham1142.exer_ck.WriteDto;
 @Controller
 
 public class WriteController {
-	
-@RequestMapping(value = "writeOkk")
-public String wreteOk(HttpServletRequest request, Model model) {
-
-	String wrname = request.getParameter("wrname");
-	String wrtitle = request.getParameter("wrtitle");
-	String wrdetail = request.getParameter("wrdetail");
-	
-	WriteDto writedto = new WriteDto();
-
-	writedto.setWrName(wrname);
-	writedto.setWrTitle(wrtitle);
-	writedto.setWrDetail(wrdetail);
-	
-	model.addAttribute("wdto", writedto);
-	
-	return "WriteOk";
+	@RequestMapping(value = "/writee")
+	public String write() {
+		return "write";
 	}
-}
 	
 
+//	@RequestMapping(value = "/writeOkk")
+//	public String writeOk(HttpServletRequest request, Model model) {
+//	
+//		String wname = request.getParameter("wrname");
+//		String wtitle = request.getParameter("wrtitle");
+//		String wdetail = request.getParameter("wrdetail");
+//		
+//		WriteDto writeDto = new WriteDto(wname, wtitle, wdetail);
+//		
+//		model.addAttribute("Wdto",writeDto);
+//		
+//		return "writeOk";
+//		}
+	
+	@RequestMapping(value = "/writeOkk")
+	public String writeOk(HttpServletRequest request, Model model) {
+	
+		String wrname = request.getParameter("wrname");
+		String wrtitle = request.getParameter("wrtitle");
+		String wrdetail = request.getParameter("wrdetail");
+		
+		WriteDto writedto = new WriteDto();
+	
+		writedto.setWrName(wrname);
+		writedto.setWrTitle(wrtitle);
+		writedto.setWrDetail(wrdetail);
+		
+		model.addAttribute("Wdto", writedto);
+		
+		return "writeOk";
+		}
+	}
+		
+	

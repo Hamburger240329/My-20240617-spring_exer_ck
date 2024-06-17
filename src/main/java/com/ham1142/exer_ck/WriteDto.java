@@ -2,9 +2,9 @@ package com.ham1142.exer_ck;
 
 public class WriteDto {
 
-	private String WrName;
-	private String WrTitle;
-	private String WrDetail;
+	private String wrName;
+	private String wrTitle;
+	private String wrDetail;
 	
 	public WriteDto() {
 		super();
@@ -13,35 +13,34 @@ public class WriteDto {
 
 	public WriteDto(String wrName, String wrTitle, String wrDetail) {
 		super();
-		WrName = wrName;
-		WrTitle = wrTitle;
-		WrDetail = wrDetail;
+		this.wrName = wrName;
+		this.wrTitle = wrTitle;
+		this.wrDetail = wrDetail;
 	}
 
 	public String getWrName() {
-		return WrName;
+		return wrName;
 	}
 
 	public void setWrName(String wrName) {
-		WrName = wrName;
+		this.wrName = wrName;
 	}
 
 	public String getWrTitle() {
-		return WrTitle;
+		return wrTitle;
 	}
 
 	public void setWrTitle(String wrTitle) {
-		WrTitle = wrTitle;
+		this.wrTitle = wrTitle;
 	}
 
 	public String getWrDetail() {
-		return WrDetail;
+		return wrDetail;
 	}
 
 	public void setWrDetail(String wrDetail) {
-		WrDetail = wrDetail;
+		this.wrDetail = wrDetail;
 	}
 
-	
 	
 }
