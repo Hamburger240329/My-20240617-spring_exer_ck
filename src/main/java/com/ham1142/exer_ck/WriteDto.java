@@ -2,7 +2,7 @@ package com.ham1142.exer_ck;
 
 public class WriteDto {
 
-	private String wrName;
+	private String wrName;	//wrName 이외에 WrName 로 지정하여도 하단 초기화 자에서 대문자 > 소문자 로 변경될 경우 DL 기입법에서 소문자로 기입해야 한다
 	private String wrTitle;
 	private String wrDetail;
 	
@@ -13,7 +13,7 @@ public class WriteDto {
 
 	public WriteDto(String wrName, String wrTitle, String wrDetail) {
 		super();
-		this.wrName = wrName;
+		this.wrName = wrName;	// 여기 있는 this.wrName 가 아닌 wrName 부분이 DL 표기법에서 적용되는 부분!! 중요함
 		this.wrTitle = wrTitle;
 		this.wrDetail = wrDetail;
 	}
