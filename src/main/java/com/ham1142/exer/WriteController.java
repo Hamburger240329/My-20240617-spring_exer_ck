@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.ham1142.exer_ck.WriteDto;
 
@@ -31,7 +32,7 @@ public class WriteController {
 //		return "writeOk";
 //		}
 	
-	@RequestMapping(value = "/writeOkk")
+	@RequestMapping(value = "/writeOkk", method = RequestMethod.GET)
 	public String writeOk(HttpServletRequest request, Model model) {
 	
 		String wrname = request.getParameter("wrname");
@@ -48,6 +49,15 @@ public class WriteController {
 		
 		return "writeOk";
 		}
+	@RequestMapping(value = "/writeOkk", method = RequestMethod.POST)
+	public String writeOk2() {
+		
+		System.out.println("post 방식 실행!!");
+		return "";
+	}
+	
+	
+	
 	}
 		
 	
